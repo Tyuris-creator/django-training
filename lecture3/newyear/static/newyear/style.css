@@ -1,0 +1,55 @@
+/* Основные стили */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: aquamarine; /* Легкий голубой фон */
+    color: #333; /* Темный текст */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Высота экрана */
+    margin: 0;
+}
+
+/* Заголовок */
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    transition: color 0.3s ease; /* Плавный переход цвета */
+}
+
+/* Стиль для "YES" */
+h1:contains("YES") {
+    color: #28a745; /* Зеленый цвет */
+}
+
+/* Стиль для "NO" */
+h1 {
+    color: #dc3545; /* Красный цвет */
+}
+
+/* Добавление анимации */
+h1 {
+    animation: fadeIn 1s ease-in; /* Анимация появления */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); /* Начальная позиция */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Конечная позиция */
+    }
+}
+
+/* Стили для ссылки */
+a {
+    text-decoration: none;
+    color: #007bff; /* Синий цвет */
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+}

@@ -1,13 +1,13 @@
 {% extends "tasks/layout.html" %}   
 {% block body %}
 <h1>Tasks</h1>
-    <ul>
+    <ul style="font-size: 60px; text-align:start;">
         {% for task in tasks %}
         <li>{{ task }}</li>
-        {& empty %}
+        {% empty %}
         <li>No tasks.</li>
         {% endfor %}
     </ul>
     <!--<a href="/tasks/add">Add a New Task</a>-->
-    <a href="{% url 'tasks:add' %}">Add a New Task</a>
+    <a style="color:blueviolet" href="{% url 'tasks:add' %}">Add a New Task</a>
 {% endblock %}
